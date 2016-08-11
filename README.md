@@ -54,7 +54,7 @@ The simplest way to use Logrus is simply the package-level exported logger:
 package main
 
 import (
-  log "github.com/Sirupsen/logrus"
+  log "github.com/truevy/logrus"
 )
 
 func main() {
@@ -65,7 +65,7 @@ func main() {
 ```
 
 Note that it's completely api-compatible with the stdlib logger, so you can
-replace your `log` imports everywhere with `log "github.com/Sirupsen/logrus"`
+replace your `log` imports everywhere with `log "github.com/truevy/logrus"`
 and you'll now have the flexibility of Logrus. You can customize it all you
 want:
 
@@ -74,7 +74,7 @@ package main
 
 import (
   "os"
-  log "github.com/Sirupsen/logrus"
+  log "github.com/truevy/logrus"
 )
 
 func init() {
@@ -123,7 +123,7 @@ application, you can also create an instance of the `logrus` Logger:
 package main
 
 import (
-  "github.com/Sirupsen/logrus"
+  "github.com/truevy/logrus"
 )
 
 // Create a new instance of the logger. You can have any number of instances.
@@ -176,9 +176,9 @@ Logrus comes with [built-in hooks](hooks/). Add those, or your custom hook, in
 
 ```go
 import (
-  log "github.com/Sirupsen/logrus"
+  log "github.com/truevy/logrus"
   "gopkg.in/gemnasium/logrus-airbrake-hook.v2" // the package is named "aibrake"
-  logrus_syslog "github.com/Sirupsen/logrus/hooks/syslog"
+  logrus_syslog "github.com/truevy/logrus/hooks/syslog"
   "log/syslog"
 )
 
@@ -277,7 +277,7 @@ could do:
 
 ```go
 import (
-  log "github.com/Sirupsen/logrus"
+  log "github.com/truevy/logrus"
 )
 
 init() {
